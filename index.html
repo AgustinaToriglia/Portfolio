@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>AT Desarrollo Web</title>
+
+
+</head>
+
+<body>
+    <!--SECCIÓN INICIO-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>|AT|</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INCIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+
+                        </ul>
+                    </nav>
+                    <!-- Iconos del menú responsive-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!--Iconos de redes sociales-->
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/agustina-toriglia/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/AgustinaToriglia" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span> Agustina Toriglia</span> estudiante de Programación Full Stack</h2>
+                <p class="descripcion"> Actualmente me encuentro cursando en Coderhouse la carrera de Programación Full
+                    Stack. Realicé cursos como Argentina Programa y Programación desde Cero en Egg Education.
+                    Mis principales conocimientos son de Front End aunque con ansias de poder comenzar pronto con Back
+                    End.
+                </p>
+                <a href="#portfolio"> Ir a portfolio </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/sobremi.avif" alt="Sobremi">
+        </div>
+
+        <div class="sobremi">
+            <a class="titulo-seccion">Sobre Mi</a>
+            <h2> Hola, soy <span>Agustina Toriglia</span></h2>
+            <h3> Desarrolladora Web </h3>
+            <p>Me encuentro estudiando la carrera de programación Full Stack en CoderHouse y planeo continuar con mis estudios realizando la Tecnicatura en Programación de Teclab.
+                Tengo como objetivo el desarrollo laboral y personal para poder aplicar lo aprendido en una organización que lo valore y me permita seguir creciendo profesionalmente.
+            </p>
+            <a href="https://drive.google.com/file/d/1tAFsym4LlUji7I2D-PfmyAwhCrqK_pxy/view?usp=share_link" target="_blank">Descargar CV</a>
+        </div>
+    </section>
+
+    <!--SECCIÓN PORTFOLIO-->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="./img/mendotravel.png" alt="proyecto1">
+                    <div class="info">
+                        <h4>MendoTravel</h4>
+                        <p>Proyecto desarrollado con HTML y CSS para curso de Desarrollo Web.</p>
+                        <a href="https://mendotravel.netlify.app" target="_blank"> Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="./img/mendotraveljs.png" alt="proyecto2">
+                    <div class="info">
+                        <h4>MendoTravel</h4>
+                        <p>Proyecto desarrollado con JavaScript</p>
+                        <a href="https://agustinatoriglia.github.io/Pre-Entrega-3/" target="_blank">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="./img/tictactoe.png" alt="proyecto3">
+                    <div class="info">
+                        <h4>TikTakToe</h4>
+                        <p>Proyecto desarrollado con HTML, CSS, SASS y JavaScript</p>
+                        <a href="https://agustinatoriglia.github.io/TaTeTi/" target="_blank">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="./img/coolcase.png" alt="proyecto4">
+                    <div class="info">
+                        <h4>CoolCase</h4>
+                        <p>Proyecto desarrollado con React</p>
+                        <a href="https://github.com/AgustinaToriglia/CoolCase.git" target="_blank">En proceso</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="filaSola">
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="./img/calculadora.png" alt="proyecto5">
+                    <div class="info">
+                        <h4>Calculadora</h4>
+                        <p>Proyecto desarrollado con HTML, CSS y JavaScript</p>
+                        <a href="https://agustinatoriglia.github.io/Calculadora/" target="_blank">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCIÓN CONTACTO-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contacto</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Dirección de correo electrónico" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema:" class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Ingresa tu mensaje"
+                        class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <p>Todos los derechos reservados 2023</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
